@@ -655,7 +655,7 @@ function startApp() {
   const name = document.getElementById('user-name').value.trim();
   const err = document.getElementById('setup-error');
 
-  if (!url.startsWith('https://') || (!url.includes('.firebaseio.com') && !url.includes('.firebasedatabase.app'))) {
+  if (!url.startsWith('https://')) {
     err.style.display = 'block';
     return;
   }
